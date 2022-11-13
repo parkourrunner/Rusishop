@@ -11,7 +11,7 @@ app.post("/category/new", async (req, res) => {
     name: req.body.name,
     description: req.body.description,
   });
-  category.save();
+  await category.save();
   res.json(category);
 });
 
@@ -29,7 +29,7 @@ app.put("/category/edit/:id", async (req, res) => {
     if (req.body.description) {
       categories.description = req.body.description;
     }
-    categories.save();
+    await categories.save();
     res.json({ ...categories._doc });
   } catch (error) {
     res.status(400).send(error);

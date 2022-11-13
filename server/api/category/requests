@@ -6,23 +6,23 @@ POST http://localhost:3001/category/new HTTP/1.1
 content-type: application/json
 
 {
-    "name": "cat1",
-    "description":"cat1 desc"
+    "name": "cat2",
+    "description":"cat2 desc"
 }
 
 ###
 
-PUT http://localhost:3001/category/edit/6370eaecd2e30f1c7327a789 HTTP/1.1
+PUT http://localhost:3001/category/edit/6370ed77d2d9c6c0b8032ea5 HTTP/1.1
 content-type: application/json
 
 {
-    "name": "cat2",
+    "name": "cat222",
     "description":"cat2 desc"
 }
 
 
 ###
 
-DELETE  http://localhost:3001/category/delete/6370eaecd2e30f1c7327a789 HTTP/1.1
+DELETE  http://localhost:3001/category/delete/6370ebebd2e30f1c7327a790 HTTP/1.1
 content-type: application/json
 

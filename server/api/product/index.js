@@ -13,7 +13,7 @@ app.post("/product/new", async (req, res) => {
     categoryId: req.body.categoryId,
     countInStock: req.body.countInStock,
   });
-  product.save();
+  await product.save();
   res.json(product);
 });
 
@@ -71,7 +71,7 @@ app.put("/product/edit/:id", async (req, res) => {
         }
       }
     }
-    product.save();
+    await product.save();
     res.json({ ...product._doc });
   } catch (error) {
     res.status(400).send(error);

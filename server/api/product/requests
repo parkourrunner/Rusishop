@@ -6,9 +6,14 @@ POST http://localhost:3001/product/new HTTP/1.1
 content-type: application/json
 
 {
-    "name": 1,
-    "categoryId":2,
-    "countInStock": 3
+    "name": 50,
+    "categoryId":60,
+    "countInStock": 70,
+    "price":{
+        "base": 300.2323,
+        "currency": "USD",
+        "discountType" : "Fixed"
+    }
 }
 
 ###
@@ -26,3 +31,10 @@ content-type: application/json
         "discountType" : "Percentage"
     }
 }
+
+
+###
+
+DELETE  http://localhost:3001/product/delete/6370ed32d2d9c6c0b8032e9a HTTP/1.1
+content-type: application/json
+
