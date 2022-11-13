@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 import { currencyEnum, discountTypeEnum } from "../shared/index.js";
 
-export const SchemaProduct = new Schema({
+export const productSchema = new Schema({
   name: {
     type: String,
     required: true,

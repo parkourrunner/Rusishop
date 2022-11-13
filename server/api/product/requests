@@ -10,9 +10,10 @@ content-type: application/json
     "categoryId":2,
     "countInStock": 3
 }
+
 ###
 
-PUT http://localhost:3001/product/edit/6370d5f580cb56e87e0e8dc4 HTTP/1.1
+PUT http://localhost:3001/product/edit/6370e890a84d5dcd141142c7 HTTP/1.1
 content-type: application/json
 
 {

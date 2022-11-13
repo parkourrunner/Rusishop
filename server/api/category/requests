@@ -1,0 +1,28 @@
+GET http://localhost:3001/category HTTP/1.1
+
+###
+
+POST http://localhost:3001/category/new HTTP/1.1
+content-type: application/json
+
+{
+    "name": "cat1",
+    "description":"cat1 desc"
+}
+
+###
+
+PUT http://localhost:3001/category/edit/6370eaecd2e30f1c7327a789 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "cat2",
+    "description":"cat2 desc"
+}
+
+
+###
+
+DELETE  http://localhost:3001/category/delete/6370eaecd2e30f1c7327a789 HTTP/1.1
+content-type: application/json
+

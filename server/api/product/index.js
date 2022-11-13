@@ -1,4 +1,4 @@
-import { ProductModel as Product } from "../../models/index.js";
+import { productModel as Product } from "../../models/index.js";
 import app from "../../app.js";
 import { currencyEnum, discountTypeEnum } from "../../models/shared/index.js";
 
@@ -19,7 +19,7 @@ app.post("/product/new", async (req, res) => {
 
 app.delete("/product/delete/:id", async (req, res) => {
   const result = await Product.findByIdAndDelete(req.params.id);
-  res.json(result);
+  res.json(`Product ${result.name} with Id=${req.params.id} Removed`);
 });
 
 app.put("/product/edit/:id", async (req, res) => {
