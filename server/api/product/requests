@@ -7,7 +7,7 @@ content-type: application/json
 
 {
     "name": 50,
-    "categoryId":60,
+    "categoryIds":[10],
     "countInStock": 70,
     "price":{
         "base": 300.2323,
@@ -18,12 +18,12 @@ content-type: application/json
 
 ###
 
-PUT http://localhost:3001/product/edit/6370e890a84d5dcd141142c7 HTTP/1.1
+PUT http://localhost:3001/product/edit/6370f9bdba8f5bb4eac46ab0 HTTP/1.1
 content-type: application/json
 
 {
     "name": 10,
-    "categoryId":20,
+    "categoryIds":[],
     "countInStock": 30,
     "price":{
         "base": 500.2323,
@@ -35,6 +35,6 @@ content-type: application/json
 
 ###
 
-DELETE  http://localhost:3001/product/delete/6370ed32d2d9c6c0b8032e9a HTTP/1.1
+DELETE  http://localhost:3001/product/delete/6370ed4bd2d9c6c0b8032e9d HTTP/1.1
 content-type: application/json
 

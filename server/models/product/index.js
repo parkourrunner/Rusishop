@@ -26,7 +26,11 @@ export const productSchema = new Schema(
         default: discountTypeEnum.Percentage,
       },
     },
-    categoryId: { type: Number, required: true },
+    categoryIds: [
+      {
+        type: Number,
+      },
+    ],
     countInStock: { type: Number, default: 0, required: true },
     description: { type: String },
   },
