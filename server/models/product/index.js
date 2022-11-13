@@ -20,7 +20,7 @@ export const SchemaProduct = new Schema({
       type: Schema.Types.Number,
       default: 0,
     },
-    descountType: {
+    discountType: {
       type: Schema.Types.Number,
       default: discountTypeEnum.Percentage,
     },

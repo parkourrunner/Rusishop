@@ -22,6 +22,6 @@ content-type: application/json
     "price":{
         "base": 500.2323,
         "currency": "IRR",
-        "descountType" : "Percentage"
+        "discountType" : "Percentage"
     }
 }

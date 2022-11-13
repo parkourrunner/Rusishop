@@ -61,13 +61,13 @@ app.put("/product/edit/:id", async (req, res) => {
         }
         product.price.discount = req.body.price.discount;
       }
-      if (req.body.price.descountType) {
+      if (req.body.price.discountType) {
         discountTypeEnum;
-        const discountTypeFound = discountTypeEnum[req.body.price.descountType];
+        const discountTypeFound = discountTypeEnum[req.body.price.discountType];
         if (discountTypeFound) {
-          product.price.descountType = discountTypeFound;
+          product.price.discountType = discountTypeFound;
         } else {
-          throw "descountType not supported!";
+          throw "discountType not supported!";
         }
       }
     }
