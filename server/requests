@@ -1,0 +1,27 @@
+GET http://localhost:3001/product HTTP/1.1
+
+###
+
+POST http://localhost:3001/product/new HTTP/1.1
+content-type: application/json
+
+{
+    "name": 1,
+    "categoryId":2,
+    "countInStock": 3
+}
+###
+
+PUT http://localhost:3001/product/edit/6370d5f580cb56e87e0e8dc4 HTTP/1.1
+content-type: application/json
+
+{
+    "name": 10,
+    "categoryId":20,
+    "countInStock": 30,
+    "price":{
+        "base": 500.2323,
+        "currency": "IRR",
+        "descountType" : "Percentage"
+    }
+}
