@@ -1,9 +1,11 @@
 import React from "react";
+import Shop from "./Pages/Shop";
 
 export default function App() {
   return (
     <>
-      <h1>مرحبا بالعالم!</h1>
+      <Shop />
+      <h1>روسی شاپ</h1>
     </>
   );
 }
