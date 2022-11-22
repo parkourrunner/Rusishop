@@ -5,6 +5,7 @@
   padding: 0;
   font-family: IranSans;
   font-weight: 300;
+  font-size: 14px;
 }
 body {
   font-size: 16px !important;
@@ -18,5 +19,6 @@ a {
 :root {
   --dark-primary: #25262b;
   --dark-secondary: #2b2e34;
+  --border-dark: #35373e;
   --white: #fff;
 }

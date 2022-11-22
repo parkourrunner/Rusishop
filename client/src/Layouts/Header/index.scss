@@ -23,35 +23,101 @@
       margin-right: 11px;
       float: right;
       line-height: 50px;
-      .screen-reader-text {
-        clip: rect(1px, 1px, 1px, 1px);
-        position: absolute !important;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-        word-wrap: normal !important;
-        top: -9999em;
-        left: -9999em;
+      .searchform-topbar {
+        display: flex;
+        align-items: center;
+
+        input.search-field-top-bar {
+          background-color: var(--dark-primary);
+          border: none;
+          color: var(--white);
+          font-size: 15px;
+          padding-left: 10px;
+          padding-right: 15px;
+          height: 30px;
+          transition: background 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+        }
+        .search-top-bar-submit {
+          display: flex;
+          align-items: center;
+          border: none;
+          background: var(--dark-primary);
+          color: var(--white);
+          padding: 0 10px;
+          height: 30px;
+          position: relative;
+          left: -5px;
+          font-size: 15px;
+        }
       }
-      input {
-        background-color: var(--dark-primary);
-        border: none;
-        color: var(--white);
-        font-size: 15px;
-        padding-left: 10px;
-        padding-right: 15px;
-        height: 30px;
-        transition: background 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    }
+  }
+}
+.site-header {
+  background: var(--dark-primary);
+  padding-top: 15px;
+  .header-logo {
+    float: right;
+  }
+  .site-title {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+  }
+  .site-description {
+    margin-bottom: 0;
+  }
+  .main-navigation {
+    .sf-menu {
+      text-align: right;
+      direction: rtl;
+      width: 100%;
+      border-top: 1px solid var(--border-dark);
+      margin-top: 15px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+      ul {
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        list-style: none;
       }
-      .search-top-bar-submit {
-        border: none;
-        background: var(--dark-primary);
-        color: var(--white);
-        padding: 0 10px;
-        height: 30px;
-        position: relative;
-        left: -5px;
-        font-size: 15px;
+      li {
+        display: inline-block;
+        a {
+          position: relative;
+          display: block;
+        }
+        &.dropdown {
+          position: relative;
+          a {
+            direction: rtl;
+            padding: 15px 30px 15px 0;
+            color: var(--white);
+          }
+          ul {
+            right: -20px;
+            left: auto;
+            min-width: 13.33333333em;
+            background-color: var(--dark-primary);
+            position: absolute;
+            z-index: 1025;
+            top: 100%;
+            left: -20px;
+            display: none;
+          }
+          &:hover {
+            ul {
+              display: block;
+            }
+          }
+          li > a:hover {
+            color: #f66249;
+            background-color: #212226;
+          }
+        }
       }
     }
   }
