@@ -87,26 +87,117 @@ function Header() {
                     </Link>
                     <ul>
                       <li>
-                        <Link to="/" title="کتاب" aria-haspopup="true">
+                        <Link
+                          to="/"
+                          title="کتاب های فارسی"
+                          aria-haspopup="true"
+                        >
                           کتاب های فارسی
                         </Link>
                       </li>
                       <li>
-                        <Link to="/" title="کتاب" aria-haspopup="true">
+                        <Link to="/" title="کتاب های روسی" aria-haspopup="true">
                           کتاب های روسی
                         </Link>
                       </li>
                       <li>
-                        <Link to="/" title="کتاب" aria-haspopup="true">
+                        <Link
+                          to="/"
+                          title="کتاب های روسی-فارسی"
+                          aria-haspopup="true"
+                        >
                           کتاب های روسی-فارسی
                         </Link>
                       </li>
                       <li>
-                        <Link to="/" title="کتاب" aria-haspopup="true">
+                        <Link
+                          to="/"
+                          title="کتاب های ترجمه شده"
+                          aria-haspopup="true"
+                        >
                           کتاب های ترجمه شده
                         </Link>
                       </li>
                     </ul>
+                  </li>
+                  <li className="dropdown">
+                    <Link
+                      to="/"
+                      title="ابزار کمک آموزشی"
+                      class="dropdown-toggle"
+                      aria-haspopup="true"
+                    >
+                      ابزار کمک آموزشی
+                    </Link>
+                    <ul>
+                      <li>
+                        <Link to="/" title="فلش کارت" aria-haspopup="true">
+                          فلش کارت
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" title="برچسب کیبورد" aria-haspopup="true">
+                          برچسب کیبورد
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" title="پلاکارد" aria-haspopup="true">
+                          پلاکارد
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" title="سی دی آموزشی" aria-haspopup="true">
+                          سی دی آموزشی
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="dropdown">
+                    <Link
+                      to="/"
+                      title="بسته های فرهنگی"
+                      class="dropdown-toggle"
+                      aria-haspopup="true"
+                    >
+                      بسته های فرهنگی
+                    </Link>
+                    <ul>
+                      <li>
+                        <Link to="/" title="پاکت پول" aria-haspopup="true">
+                          پاکت پول
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" title="کارت پستال" aria-haspopup="true">
+                          کارت پستال
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" title="مگنت" aria-haspopup="true">
+                          مگنت
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" title="ساک دستی" aria-haspopup="true">
+                          ساک دستی
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="">
+                    <Link to="/" title="فرهنگ ها" class="">
+                      فرهنگ ها
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link to="/" title="دوره های آموزش آنلاین" class="">
+                      دوره های آموزش آنلاین
+                    </Link>
+                  </li>
+                  <li className="">
+                    <Link to="/" title="سبد خرید" class="">
+                      سبد خرید
+                    </Link>
                   </li>
                 </ul>
               </div>

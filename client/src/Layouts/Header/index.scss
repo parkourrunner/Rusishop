@@ -89,14 +89,16 @@
         a {
           position: relative;
           display: block;
+          color: var(--white);
+          direction: rtl;
+          padding: 15px 30px 15px 0;
+          &:hover {
+            color: #f66249;
+            background-color: #212226;
+          }
         }
         &.dropdown {
           position: relative;
-          a {
-            direction: rtl;
-            padding: 15px 30px 15px 0;
-            color: var(--white);
-          }
           ul {
             right: -20px;
             left: auto;
@@ -107,15 +109,14 @@
             top: 100%;
             left: -20px;
             display: none;
+            li {
+              display: list-item;
+            }
           }
           &:hover {
             ul {
               display: block;
             }
-          }
-          li > a:hover {
-            color: #f66249;
-            background-color: #212226;
           }
         }
       }
